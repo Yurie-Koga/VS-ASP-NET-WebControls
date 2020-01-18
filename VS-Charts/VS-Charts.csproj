@@ -34,39 +34,15 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
-    <Content Include="Default_.aspx" />
-    <Content Include="Page1.aspx" />
-    <Content Include="SecurePage.aspx" />
-    <Content Include="BasePage.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="App_GlobalResources\Login\BasePage.aspx" />
+    <Content Include="App_GlobalResources\Login\SecurePage.aspx" />
+    <Content Include="Page1.aspx" />
+    <Content Include="App_GlobalResources\Login\Login.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Default_.aspx.cs">
-      <DependentUpon>Default_.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Default_.aspx.designer.cs">
-      <DependentUpon>Default_.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Page1.aspx.cs">
-      <DependentUpon>Page1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Page1.aspx.designer.cs">
-      <DependentUpon>Page1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SecurePage.aspx.cs">
-      <DependentUpon>SecurePage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SecurePage.aspx.designer.cs">
-      <DependentUpon>SecurePage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="BasePage.aspx.cs">
-      <DependentUpon>BasePage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="BasePage.aspx.designer.cs">
-      <DependentUpon>BasePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -74,6 +50,34 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_GlobalResources\Login\BasePage.aspx.cs">
+      <DependentUpon>BasePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Login\BasePage.aspx.designer.cs">
+      <DependentUpon>BasePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Login\SecurePage.aspx.cs">
+      <DependentUpon>SecurePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Login\SecurePage.aspx.designer.cs">
+      <DependentUpon>SecurePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page1.aspx.cs">
+      <DependentUpon>Page1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page1.aspx.designer.cs">
+      <DependentUpon>Page1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Login\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Login\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_GlobalResources\" />
+    <Folder Include="App_GlobalResources\Login\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

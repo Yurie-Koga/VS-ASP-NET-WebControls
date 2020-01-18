@@ -5,33 +5,18 @@ using System.Web.UI;
 namespace VSCharts
 {
 
-    public partial class Login : BasePage
+    public partial class Default : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        public void button1Clicked(object sender, EventArgs args)
         {
-            if (IsPostBack)
-            {
-                return;
-            }
-            updateStatusLabel();
+            button1.Text = "You clicked me";
         }
 
-        protected void loginButtonClick(object sender, EventArgs e)
+        public void button2Clicked(object sender, EventArgs args)
         {
-            Session["Auth"] = "True";
-            updateStatusLabel();
+            label1.Text = textbox1.Text;
         }
 
-        protected void logoutButtonClick(object sender, EventArgs e)
-        {
-            Session["Auth"] = null;
-            updateStatusLabel();
-        }
 
-        protected void updateStatusLabel()
-        {
-            statusLabel.Text = IsLoggedIn ? "Logged in" : "Logged out";
-            messageLabel.Text = IsLoggedIn ? "You can visit Page1." : "Please log in.";
-        }
     }
 }

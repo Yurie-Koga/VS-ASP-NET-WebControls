@@ -1,25 +1,40 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="VSCharts.Login" %>
+﻿<%@ Page Language="C#" Inherits="VSCharts.Default" %>
 <!DOCTYPE html>
 <html>
 <head runat="server">
-	<title>Login</title>
+	<title>Default</title>
 </head>
 <body>
-	<form id="form1" runat="server">
+    <form id="form1" runat="server">
         <div>
-            <p>Log in status: <asp:Label id="statusLabel" runat="server" /></p>
+            <div>
+                <p>
+                    Input Name:
+                    <input type="text" name="myname">
+                    <input type="submit" value="OK">
+                </p>
+            </div>
+            <div>
+                <%
+                if(!String.IsNullOrEmpty(Request["myname"])){
+                    Response.Write("Hello " + Request["myname"]);
+                }
+                %>
+            </div>
         </div>
-        <div>
-            <p><asp:Label id="messageLabel" runat="server" /></p>            
-        </div>
+
         <div>
             <p>
-                <asp:Button id="loginButton" runat="server" OnClick="loginButtonClick" Text="Log in" />
-                <asp:Button id="logoutButton" runat="server" OnClick="logoutButtonClick" Text="Log put" />
+		        <asp:Button id="button1" runat="server" Text="Click me!" OnClick="button1Clicked" />
             </p>
-        </div>
-        <div>
-            <a href="Page1.aspx">&raquo; Page1</a>
+
+            <p>
+                <asp:TextBox id="textbox1" runat="server" Text="Input here"/>        
+                <asp:Button id="button2" runat="server" Text="Change Label" OnClick="button2Clicked" />
+            </p>
+            <p>
+                <asp:Label id="label1" runat="server" Text="Input will appear here"/>            
+            </p>
         </div>
 	</form>
 </body>
