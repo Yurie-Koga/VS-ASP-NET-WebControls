@@ -5,11 +5,11 @@ using System.Web.UI;
 namespace VSCharts
 {
 
-    public partial class Default
+    public partial class Login
     {
-        protected System.Web.UI.WebControls.Button button1;
-        protected System.Web.UI.WebControls.Button button2;
-        protected System.Web.UI.WebControls.Label label1;
-        protected System.Web.UI.WebControls.TextBox textbox1;
+        protected System.Web.UI.WebControls.Button loginButton;
+        protected System.Web.UI.WebControls.Button logoutButton;
+        protected System.Web.UI.WebControls.Label statusLabel;
+        protected System.Web.UI.WebControls.Label messageLabel;
     }
 }
