@@ -15,5 +15,8 @@ namespace VSCharts
         protected System.Web.UI.WebControls.BulletedList bulletedList1;
         protected System.Web.UI.WebControls.Calendar calendar1;
         protected System.Web.UI.WebControls.Label labelCalendar1;
+        protected System.Web.UI.WebControls.CheckBox checkbox1;
+        protected System.Web.UI.WebControls.Label labelCheckbox1;
+
     }
 }

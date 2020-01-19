@@ -12,6 +12,8 @@ namespace VSCharts
             if (!IsPostBack)
             {
                 calendar1.SelectedDate = calendar1.TodaysDate;
+
+                labelCheckbox1.Text = CalculateTotal(false).ToString("c");
             }
         }
 
@@ -28,6 +30,21 @@ namespace VSCharts
         public void calendar1SelectionChanged(object sender, EventArgs args)
         {
             labelCalendar1.Text = calendar1.SelectedDate.ToString("m");
+        }
+
+        public void Check_Clicked(object sender, EventArgs args)
+        {
+            labelCheckbox1.Text = CalculateTotal(checkbox1.Checked).ToString("c");
+        }
+
+        protected double CalculateTotal(bool Taxable)
+        {
+            double result = 1 + 2 + 3;
+            if (Taxable)
+            {
+                result += result * 0.086;
+            }
+            return result;
         }
     }
 }

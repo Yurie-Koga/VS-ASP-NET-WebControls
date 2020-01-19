@@ -63,6 +63,48 @@
             <p><asp:Calendar id="calendar1" runat="server" OnSelectionChanged="calendar1SelectionChanged" /></p>
             <p><asp:Label id="labelCalendar1" runat="server" Text="Selected Date on Calendar will appear here." /></p>
         </div>
+
+        <div>
+            <h3>CheckBox CheckedChanged Example</h3>
+            <p>Select whether to include tax in the subtotal.</p>
+
+            <table border="1" cellpadding="5">
+                <tr>
+                    <th colspan="2">Shopping cart</th>
+                </tr>
+
+                <tr>
+                    <td>Item 1</td>
+                    <td>$1</td>
+                </tr>
+
+                <tr>
+                    <td>Item 2</td>
+                    <td>$2</td>
+                </tr>
+
+                <tr>
+                    <td>Item 3</td>
+                    <td>$3</td>
+                </tr>
+
+                <tr>
+                    <td><b>Subtotal</b></td>
+                    <td><asp:Label id="labelCheckbox1" runat="server"/></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <asp:CheckBox id="checkbox1" runat="server"
+                            AutoPostBack="True"
+                            Text="Include 8.6% sales tax"
+                            TextAlign="Right"
+                            OnCheckedChanged="Check_Clicked"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
 	</form>
 </body>
 </html>
