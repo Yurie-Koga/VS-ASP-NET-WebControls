@@ -50,12 +50,18 @@
         <div>
             <h3>BulletedList</h3>
             <p>
-                <asp:BulletedList id="bulletedList1" runat="server" BulletStyle="LowerRoman" DisplayMode="LinkButton">
+                <asp:BulletedList id="bulletedList1" runat="server" BulletStyle="LowerRoman" DisplayMode="HyperLink" Target="_blank">
                     <asp:ListItem Value="http://www.cohowinery.com">Coho Winery</asp:ListItem>
                     <asp:ListItem Value="http://www.contoso.com">Contoso, Ltd.</asp:ListItem>
                     <asp:ListItem Value="http://www.tailspintoys.com">Tailspin Toys</asp:ListItem>
                 </asp:BulletedList>
             </p>
+        </div>
+
+        <div>
+            <h3>Calendar</h3>
+            <p><asp:Calendar id="calendar1" runat="server" OnSelectionChanged="calendar1SelectionChanged" /></p>
+            <p><asp:Label id="labelCalendar1" runat="server" Text="Selected Date on Calendar will appear here." /></p>
         </div>
 	</form>
 </body>
