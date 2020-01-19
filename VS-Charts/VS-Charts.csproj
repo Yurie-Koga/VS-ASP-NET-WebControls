@@ -78,6 +78,11 @@
   <ItemGroup>
     <Folder Include="App_GlobalResources\" />
     <Folder Include="App_GlobalResources\Login\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Data\adfile.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

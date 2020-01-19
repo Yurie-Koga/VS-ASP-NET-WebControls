@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" Inherits="VSCharts.Default" %>
 <!DOCTYPE html>
+
+
 <html>
 <head runat="server">
 	<title>Default</title>
@@ -35,6 +37,11 @@
             <p>
                 <asp:Label id="label1" runat="server" Text="Input will appear here"/>            
             </p>
+        </div>
+
+        <div>
+            <p>AdRotator <br> Impressions: Color=10, Mono=50</p>
+            <p><asp:AdRotator id="adrotator1" runat="server" AdvertisementFile="~/App_Data/adfile.xml" Target="_blank" /></p>
         </div>
 	</form>
 </body>

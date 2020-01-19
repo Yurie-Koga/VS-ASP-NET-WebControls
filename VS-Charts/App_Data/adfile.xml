@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Advertisements xmlns="http://schemas.microsoft.com/AspNet/AdRotator-Schedule-File">
+    <Ad>
+        <ImageUrl>~/images/cheers_color.png</ImageUrl>
+        <NavigateUrl>https://www.google.com/search?biw=1236&amp;bih=916&amp;tbm=isch&amp;sa=1&amp;ei=oZ8jXtmjKfG-0PEPi4mQwAY&amp;q=cheers+beer+color&amp;oq=cheers+beer+color&amp;gs_l=img.3...529456.534475..534740...8.0..0.65.578.11......0....1..gws-wiz-img.......0j0i5i30j0i8i30j0i24.i7g3T_Hou6M&amp;ved=0ahUKEwiZ-KKUsY7nAhVxHzQIHYsEBGgQ4dUDCAc&amp;uact=5</NavigateUrl>
+        <AlternateText>Colorful cheers</AlternateText>
+        <Impressions>10</Impressions>
+    </Ad>
+    <Ad>
+        <ImageUrl>~/images/cheers.png</ImageUrl>
+        <NavigateUrl>https://www.google.com/search?q=cheers+beer+monochrome&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwj5xOCMsY7nAhXzGDQIHXK7C-0Q_AUoAXoECAsQAw&amp;biw=989&amp;bih=916</NavigateUrl>
+        <AlternateText>Mono cheers</AlternateText>
+        <Impressions>50</Impressions>
+    </Ad>
+</Advertisements>
