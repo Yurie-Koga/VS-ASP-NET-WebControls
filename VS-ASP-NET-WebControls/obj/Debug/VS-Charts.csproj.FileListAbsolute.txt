@@ -1,0 +1,5 @@
+/Users/ujisaori/Documents/02_VisualStudio/VS-ASP-NET-WebControls/VS-Charts/bin/VS-Charts.dll
+/Users/ujisaori/Documents/02_VisualStudio/VS-ASP-NET-WebControls/VS-Charts/bin/VS-Charts.pdb
+/Users/ujisaori/Documents/02_VisualStudio/VS-ASP-NET-WebControls/VS-Charts/obj/Debug/VS-Charts.csprojAssemblyReference.cache
+/Users/ujisaori/Documents/02_VisualStudio/VS-ASP-NET-WebControls/VS-Charts/obj/Debug/VS-Charts.dll
+/Users/ujisaori/Documents/02_VisualStudio/VS-ASP-NET-WebControls/VS-Charts/obj/Debug/VS-Charts.pdb
