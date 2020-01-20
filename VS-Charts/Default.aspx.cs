@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Web;
 using System.Web.UI;
+using System.Drawing;
 
 namespace VSCharts
 {
@@ -45,6 +46,11 @@ namespace VSCharts
                 result += result * 0.086;
             }
             return result;
+        }
+
+        public void buttonColorClicked(object sender, EventArgs args)
+        {
+            labelDDList1.BackColor = Color.FromName(dropDownList1.SelectedItem.Value);
         }
     }
 }

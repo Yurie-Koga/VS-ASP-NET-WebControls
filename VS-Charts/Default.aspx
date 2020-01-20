@@ -105,6 +105,20 @@
             </table>
         </div>
 
+        <div>
+            <h3>DropDownList</h3>
+            <p>
+                <asp:DropDownList id="dropDownList1" runat="server">
+                    <asp:ListItem Selected="True" Value="White">White</asp:ListItem>
+                    <asp:ListItem Value="Gray">Gray</asp:ListItem>
+                    <asp:ListItem Value="Black">Black</asp:ListItem>
+                    <asp:ListItem Value="Red">Red</asp:ListItem>
+                    <asp:ListItem Value="Blue">Blue</asp:ListItem>
+                </asp:DropDownList>
+                <asp:Button id="buttonColor" runat="server" Text="Change color" OnClick="buttonColorClicked" />
+                <asp:Label id="labelDDList1" runat="server" Text="Selected Color"/>
+            </p>
+        </div>
 	</form>
 </body>
 </html>
